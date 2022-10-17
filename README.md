@@ -5,9 +5,25 @@ FelixWareV2 (Possibly up to V3!) will be the last project I am working on in the
 # https://direct-link.net/259045/felixwarev2-support-page
 
 # Origins of FelixWare?
-FelixWare is of my old script hub Felix Hub! However alot has changed besides just the name, FelixWare will only be exclusive to 1 game. This means FelixWare will be updated regularly.
+FelixWare is of my old script hub Felix Hub! However alot has changed besides just the name.
 
 # Change Logs!
+
+# V2.1.0a
+
+This version brings around:
+
+[+] Legends of Speed
+[+] Orb AutoFarm
+[+] Hoop AutoFarm
+[+] Auto Rebirth
+
+[+] Universal
+[+] Loader
+[+] Working FPS Counter
+[+] Working Ping Counter
+
+
 
 # V2.0.0
 
