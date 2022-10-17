@@ -173,7 +173,7 @@ local serverid_info = GameInfo_Info:Label("ServerID: "..game.JobId)
 local gameid_info = GameInfo_Info:Label("GameID: "..game.PlaceId)
 
 local ScriptInfo_Info = Info:Section("Script Info")
-local version_info = ScriptInfo_Info:Label("V2.0.0a")
+local version_info = ScriptInfo_Info:Label("V2.2.0a")
 local seucreid_info = ScriptInfo_Info:Label("SecureID: "..HighlightFolder.Name)
 local remotesfired_info = ScriptInfo_Info:Label("RemotesFired: 0")
 local idestroy_info = ScriptInfo_Info:Label("Instances Deleted: 0")
