@@ -133,7 +133,7 @@ GameInfo_Info:Label("ServerID: "..game.JobId)
 GameInfo_Info:Label("GameID: "..game.PlaceId)
 
 local ScriptInfo_Info = Info:Section("Script Info")
-ScriptInfo_Info:Label("V2.1.0a")
+ScriptInfo_Info:Label("V2.2.0a")
 ScriptInfo_Info:Label("SecureID: N/A")
 local remotesfired_info = ScriptInfo_Info:Label("RemotesFired: 0")
 local idestroy_info = ScriptInfo_Info:Label("Instances Deleted: 0")
