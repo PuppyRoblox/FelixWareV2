@@ -4,7 +4,8 @@ local request = http and http.request or fluxus and fuxus.request or syn and syn
 
 local game_table = {
     [9993529229] = "https://raw.githubusercontent.com/PuppyRoblox/FelixWareV2/main/Main.lua";
-    [3101667897] = "https://raw.githubusercontent.com/PuppyRoblox/FelixWareV2/main/Legends%20of%20Speed.lua"
+    [3101667897] = "https://raw.githubusercontent.com/PuppyRoblox/FelixWareV2/main/Legends%20of%20Speed.lua";
+    [92604236] = "https://raw.githubusercontent.com/PuppyRoblox/FelixWareV2/main/High%20School%20Life.lua";
 }
 
 request({
