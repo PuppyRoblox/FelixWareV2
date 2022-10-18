@@ -10,6 +10,10 @@ FelixWare is of my old script hub Felix Hub! However alot has changed besides ju
 
 # Change Logs!
 
+# V2.2.2a
+[+] Counter Blox Remastered
+[+] Kill All
+
 # V2.2.0a
 
 [+] High School Life
