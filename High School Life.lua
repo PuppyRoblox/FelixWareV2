@@ -65,7 +65,7 @@ GameInfo_Info:Label("ServerID: "..game.JobId)
 GameInfo_Info:Label("GameID: "..game.PlaceId)
 
 local ScriptInfo_Info = Info:Section("Script Info")
-ScriptInfo_Info:Label("V2.2.0a")
+ScriptInfo_Info:Label("V2.2.2a")
 ScriptInfo_Info:Label("SecureID: N/A")
 
 local CreatorInfo_Info = Info:Section("Creator Info")
