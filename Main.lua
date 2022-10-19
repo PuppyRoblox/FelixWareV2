@@ -1,4 +1,8 @@
+
+
 local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
+
+
 local win = SolarisLib:New({
     Name = "FelixWare V2";
     FolderToSave = "FelixWare_UI";
@@ -13,6 +17,9 @@ local vartable = {
 
     ["Trigger Bot"] = false;
     ["Delay"] = 0;
+
+    ["Damage Increaser"] = false;
+    ["Mulit"] = 1;
 
     ["Dev_Varabials"] = {
         ["Cases Ava"] = {
@@ -80,8 +87,49 @@ local Cases = win:Tab("Cases")
 local Info = win:Tab("Infomation")
 
 local TriggerBot = Legit:Section("Trigger Bot")
+local DamageMulitplier = Legit:Section("Damage Increaser")
+local Aimbot = Legit:Section("Aimbot")
 local KillAll = Rage:Section("Kill All")
 local highlight_esp = Visuals:Section("HighlightESP")
+
+local game_metatable = getrawmetatable(game)
+local namecall_o = game_metatable.__namecall
+local fireserver_o
+
+setreadonly(game_metatable, false)
+
+fireserver_o = hookfunction(game:GetService("ReplicatedStorage").Events.EEED.FireServer, newcclosure(function(self, method, ...)
+    local arguments = {...}
+
+
+    if vartable["Damage Increaser"] then
+        arguments[12] = arguments[12] * vartable["Mulit"]
+    end
+
+    local script = getcallingscript()
+    return fireserver_o(self, arguments)
+ end))
+
+DamageMulitplier:Toggle(
+    "Enable",
+    vartable["Damage Increaser"],
+    "Toggle",
+    function(state)
+        vartable["Damage Increaser"] = state
+    end
+)
+
+DamageMulitplier:Slider(
+    "Times",
+    1,
+    100,
+    1,
+    0.25,
+    "Slider",
+    function(state)
+        vartable["Mulit"] = state
+    end
+)
 
 --[[
 
@@ -146,7 +194,7 @@ KillAll:Toggle(
                             local ohVector32 = Vector3.new(-874.1176147460938, 982.31982421875, 94.69325256347656)
                             local ohString3 = "AWP"
                             local ohNumber4 = 8192
-                            local ohInstance5 = workspace.thegraynotepadv4.Gun
+                            local ohInstance5 = game.Players.LocalPlayer.Character.Gun
                             local ohNil6 = nil
                             local ohNil7 = nil
                             local ohNumber8 = 1
